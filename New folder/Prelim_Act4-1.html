@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>PRELIM ACTIVITY 4</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="Prelim_Act4.css">
+</head>
+
+<body id="top">
+   <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up"
+         viewBox="0 0 16 16">
+         <path fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+      </svg>
+   </button>
+
+   <div class="coverimage">
+      <div class="imageinimage">
+         <img class="inner-image" src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/34295/movie-ticket-clipart-md.png" width="200px">
+         <img src="https://cdna.artstation.com/p/assets/covers/images/023/335/526/large/justin-nam-jnam-lightingexercise1-2.jpg?1578883643" class="cover" alt="Theater Hallway" style="width:100%;">
+      </div>
+      <div class="centered">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Eo_circle_red_letter-r.svg/1024px-Eo_circle_red_letter-r.svg.png" width="80px">
+         <h1>The Rector </h1>
+         <h2>Top 10 Favorite Movies</h2>
+      </div>
+   </div>
+   <div class="movieselection">
+      <a href="#movie1"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BMGEzMWNiZjQtNmNkNi00YTJjLTkwZGYtYTlhMDMzODJlZjY2XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg"
+            width="250px"></a>
+      <a href="#movie2"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BNDEwMThlNDAtMmE5NS00ZTcwLTlmNzgtNmVlNDk2ODI0ZjQxXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_FMjpg_UX1000_.jpg"
+            width="250px"></a>
+      <a href="#movie3"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+            width="250px"></a>
+      <a href="#movie4"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BZDdiZTAwYzAtMDI3Ni00OTRjLTkzN2UtMGE3MDMyZmU4NTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+            width="250px"></a>
+      <a href="#movie5"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BNTc1M2I2ZjUtYzUwNi00MDZkLWIwNDMtNWFhZWQwODJlZGFkXkEyXkFqcGdeQXVyOTQ3ODYwNzM@._V1_FMjpg_UX1000_.jpg"
+            width="250px"></a>
+      <a href="#movie6"><img class="imagelink" 
+            src="https://static.wikia.nocookie.net/tenkinoko1663/images/c/c9/Key_Visual_3.png/revision/latest?cb=20201124164242"
+            width="250px"></a>
+      <a href="#movie7"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_FMjpg_UX1000_.jpg"
+            width="250px"></a>
+      <a href="#movie8"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BY2FkY2E1OTgtYmFhYi00NzczLThjYjktNDljN2ZiZGY4OGIzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+            width="250px"></a>
+      <a href="#movie9"><img class="imagelink" 
+            src="https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg"
+            width="250px"></a>
+      <a href="#movie10"><img class="imagelink" 
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Back_to_the_Future.jpg/220px-Back_to_the_Future.jpg"
+            width="250px"></a>
+   </div>
+   <h1 id="movie1" style="color:red">Top 10 Favorite Movies in Table</h1>
+   <table>
+      <tr>
+         <th>#</th>
+         <th>Title</th>
+         <th style="width:20%">Synopsis</th>
+         <th>Directed By</th>
+         <th>Casts</th>
+         <th>Poster</th>
+      </tr>
+      <tr>
+         <td>
+            <h2>1</h2>
+         </td>
+         <td>
+            <h3>Honor Thy Father</h3>
+         </td>
+         <td>
+            A family is caught in a financial ruin after being involved in a ponzi scheme.
+         </td>
+         <td>Erik Matti</td>
+         <td>
+            <ul>
+               <li>John Lloyd Cruz</li>
+               <li>Meryll Soriano</li>
+               <li>Tirso Cruz III</li>
+               <li>Dan Fernandez</li>
+               <li>Khalil Ramos</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://m.media-amazon.com/images/M/MV5BMGEzMWNiZjQtNmNkNi00YTJjLTkwZGYtYTlhMDMzODJlZjY2XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg"
+               width="250px"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://www.hollywoodreporter.com/wp-content/uploads/2015/09/honor_thy_father_still_h_2015.jpg" target="_blank">
+            <img class="moviecover1"
+               src="https://www.hollywoodreporter.com/wp-content/uploads/2015/09/honor_thy_father_still_h_2015.jpg"
+                width="100%">
+         </a>
+         </td>
+      </tr>
+      <tr id="movie2">
+         <td>
+            <h2>2</h2>
+         </td>
+         <td>
+            <h3>Gusto Kita with All My Hypothalamus</h3>
+         </td>
+         <td>
+            In Avenida, the lives of four men intertwine, searching for something. They all find what they are looking
+            for in one woman named Aileen.
+         </td>
+         <td>Dwein Baltazar</td>
+         <td>
+            <ul>
+               <li>Iana Bernardez</li>
+               <li>Nicco Manalo</li>
+               <li>Dylan Ray Talon</li>
+               <li>Soliman Cruz</li>
+               <li>Anthony Falcon</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://m.media-amazon.com/images/M/MV5BNDEwMThlNDAtMmE5NS00ZTcwLTlmNzgtNmVlNDk2ODI0ZjQxXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_FMjpg_UX1000_.jpg"
+               width="250px"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://m.media-amazon.com/images/M/MV5BMTYxMGY4ZDEtODZmMS00ZjA2LWJiZWMtZWE5Njk3ZGFmNWIxXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg" target="_blank">
+            <img class="moviecover2"
+               src="https://m.media-amazon.com/images/M/MV5BMTYxMGY4ZDEtODZmMS00ZjA2LWJiZWMtZWE5Njk3ZGFmNWIxXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg"
+                width="100%">
+         </a>
+         </td>
+      </tr>
+      <tr id="movie3">
+         <td>
+            <h2>3</h2>`
+         </td>
+         <td>
+            <h3>Interstellar</h3>
+         </td>
+         <td>
+            The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the
+            limitations on human space travel and conquer the vast distances involved in an interstellar
+            voyage.
+         </td>
+         <td>Christopher Nolan</td>
+         <td>
+            <ul>
+               <li>Matthew McConaughey</li>
+               <li>Anne Hathaway</li>
+               <li>Jessica Chastain</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+               width="250px" height="370"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://wallpaperaccess.com/full/13394.png" target="_blank">
+            <img class="moviecover1" src="https://wallpaperaccess.com/full/13394.png"
+             width="100%">
+         </a>
+         </td>
+      </tr>
+      <tr id="movie4">
+         <td>
+            <h2>4</h2>
+         </td>
+         <td>
+            <h3>Before Sunrise</h3>
+         </td>
+         <td>
+            On his way to Vienna, American Jesse meets Céline, a student returning to Paris. After long
+            conversations forge a surprising connection between them, Jesse convinces Celine to get off the
+            train with him in Vienna.
+         </td>
+         <td>Richard Linklater</td>
+         <td>
+            <ul>
+               <li>Ethan Hawke</li>
+               <li>Julie Delpy</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://m.media-amazon.com/images/M/MV5BZDdiZTAwYzAtMDI3Ni00OTRjLTkzN2UtMGE3MDMyZmU4NTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+               width="250px" height="370"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://wallpaperaccess.com/full/2183437.jpg" target="_blank">
+            <img class="moviecover3" src="https://wallpaperaccess.com/full/2183437.jpg" width="100%">
+         </a>
+         </td>
+      </tr>
+      <tr id="movie5">
+         <td>
+            <h2>5</h2>
+         </td>
+         <td>
+            <h3>Oda sa Wala</h3>
+         </td>
+         <td>
+            Sonya, an old maid is about to give up on herself until one day, she meets a corpse in her
+            family's embalming business that changes her life.
+         </td>
+         <td>Dwein Baltazar</td>
+         <td>
+            <ul>
+               <li>Pokwang</li>
+               <li>Joonee Gamboa</li>
+               <li>Lita Loresco</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://m.media-amazon.com/images/M/MV5BNTc1M2I2ZjUtYzUwNi00MDZkLWIwNDMtNWFhZWQwODJlZGFkXkEyXkFqcGdeQXVyOTQ3ODYwNzM@._V1_FMjpg_UX1000_.jpg"
+               width="250px" height="370"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://cinema.indiana.edu/film_images/oda-sa-wala.png" target="_blank">
+            <img class="moviecover1" src="https://cinema.indiana.edu/film_images/oda-sa-wala.png" width="100%">
+         </a>
+         </td>
+      </tr>
+      <tr id="movie6">
+         <td>
+            <h2>6</h2>
+         </td>
+         <td>
+            <h3>Weathering with You</h3>
+         </td>
+         <td>
+            High school student Hodaka leaves his home on an isolated island and moves to Tokyo, but he immediately
+            becomes broke. He lives his days in isolation, but finally finds a job as a writer for a shady occult
+            magazine.
+         </td>
+         <td>Makoto Shinkai</td>
+         <td>
+            <ul>
+               <li>Kotaro Daigo</li>
+               <li>Nana Mori</li>
+            </ul>
+         </td>
+         <td>
+            <img
+               src="https://static.wikia.nocookie.net/tenkinoko1663/images/c/c9/Key_Visual_3.png/revision/latest?cb=20201124164242"
+               width="250px"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://images5.alphacoders.com/100/1003363.jpg" target="_blank">
+            <img class="moviecover3" src="https://images5.alphacoders.com/100/1003363.jpg" width="100%">
+            </a>
+         </td>
+      </tr>
+      <tr id="movie7">
+         <td>
+            <h2>7</h2>
+         </td>
+         <td>
+            <h3>Everything Everywhere All at Once</h3>
+         </td>
+         <td>
+            An aging Chinese immigrant is swept up in an insane adventure, where she alone can save whats important
+            to her by connecting with the lives she could have led in other universes.
+         </td>
+         <td>
+            <ul>
+               <li>Daniel Scheinert</li>
+               <li>Daniel Kwan</li>
+            </ul>
+         </td>
+         <td>
+            <ul>
+               <li>Michelle Yeoh</li>
+               <li>Stephanie Hsu</li>
+               <li>Ke Huy Quan</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_FMjpg_UX1000_.jpg"
+               width="250px" height="370"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://tldrmoviereviewsblog.files.wordpress.com/2022/04/everything-everywhere-all-at-once-banner.jpg" target="_blank">
+            <img class="moviecover1"
+               src="https://tldrmoviereviewsblog.files.wordpress.com/2022/04/everything-everywhere-all-at-once-banner.jpg"
+                 width="100%">
+            </a>
+         </td>
+      </tr>
+      <tr id="movie8">
+         <td>
+            <h2>8</h2>
+         </td>
+         <td>
+            <h3>All the Bright Places</h3>
+         </td>
+         <td>
+            Two teens facing personal struggles form a powerful bond as they embark on a cathartic journey
+            chronicling the wonders of Indiana.
+         </td>
+         <td>Brett Haley</td>
+         <td>
+            <ul>
+               <li>Elle Fanning</li>
+               <li>Justice Smith</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://m.media-amazon.com/images/M/MV5BY2FkY2E1OTgtYmFhYi00NzczLThjYjktNDljN2ZiZGY4OGIzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+               width="250px" height="370"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://www.moviedash.com/wp-content/uploads/2020/05/ESDu6XxXUAALeAe-1024x576.jpg" target="_blank">
+            <img class="moviecover1"
+               src="https://www.moviedash.com/wp-content/uploads/2020/05/ESDu6XxXUAALeAe-1024x576.jpg"  width="100%">
+         </a>
+         </td>
+      </tr>
+      <tr id="movie9">
+         <td>
+            <h2>9</h2>
+         </td>
+         <td>
+            <h3>Doctor Strange</h3>
+         </td>
+         <td>
+            After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a
+            sorcerer takes him under her wing and trains him to defend the world against evil.
+         </td>
+         <td>Scott Derrickson</td>
+         <td>
+            <ul>
+               <li>Benedict Cumberbatch</li>
+               <li>Chiwetel Ejiofor</li>
+               <li>Rachel McAdams</li>
+            </ul>
+         </td>
+         <td><img src="https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg"
+               width="250px" height="370"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://www.hollywoodreporter.com/wp-content/uploads/2016/04/tea0100_comp_v420.1034.jpg" target="_blank">
+            <img class="moviecover4"
+               src="https://www.hollywoodreporter.com/wp-content/uploads/2016/04/tea0100_comp_v420.1034.jpg"
+                width="100%">
+         </a>
+         </td>
+      </tr>
+      <tr id="movie10">
+         <td>
+            <h2>10</h2>
+         </td>
+         <td>
+            <h3>Back to the Future</h3>
+         </td>
+         <td>
+            Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting
+            his parents first meeting and attracting his mothers romantic interest. Marty must repair the damage to
+            history by rekindling his parents romance and - with the help of his eccentric inventor friend Doc Brown
+            - return to 1985.
+         </td>
+         <td>Robert Zemeckis</td>
+         <td>
+            <ul>
+               <li>Michael J. Fox</li>
+               <li>Christopher Lloyd</li>
+               <li>Lea Thompson</li>
+            </ul>
+         </td>
+         <td><img
+               src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Back_to_the_Future.jpg/220px-Back_to_the_Future.jpg"
+               width="250px" height="370"></td>
+      </tr>
+      <tr>
+         <td colspan="6">
+            <a href="https://i.ytimg.com/vi/Hnt4yCr0Xyw/maxresdefault.jpg" target="_blank">
+            <img class="moviecover1" src="https://i.ytimg.com/vi/Hnt4yCr0Xyw/maxresdefault.jpg" width="100%">
+         </a>
+         </td>
+      </tr>
+   </table>
+   <div style="padding-top: 50px;">
+      <img src="https://pics.clipartpng.com/midle/Cinema_Seats_PNG_Clip_Art_Image-2746.png" width="100%">
+   </div>
+   <script type="text/javascript">
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+   </script>
+</body>
+</html>

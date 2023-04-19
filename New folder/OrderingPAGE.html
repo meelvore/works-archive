@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<title>Ramen House</title>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <style>
+        body,
+        .container {
+            width: 100%;
+            color: #fff;
+            background-color: #181a1b;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            color: #fff;
+            border: none;
+            outline: none;
+            background-color: #d11515;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #myBtn:hover {
+            background-color: #fff;
+            color: red;
+        }
+
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        li {
+            color: #fff;
+            display: inline;
+        }
+
+        .card,
+        .navbar,
+        footer {
+            background-color: #d11515;
+            color: #fff;
+        }
+
+        .card {
+            padding: 20px 20px 40px 20px;
+            overflow: visible;
+            margin: 100px 20px 20px 0px;
+        }
+
+        .card img {
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+            margin-top: -100px;
+            border-radius: 100%;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .modal * {
+            color: #181a1b;
+        }
+
+        .modal-footer * {
+            color: #fff;
+        }
+
+        .plus-minus-input {
+            margin-top: 15px;
+        }
+
+        .plusminus {
+            width: 60px;
+            background-color: #d11515;
+            color: #fff;
+            display: none;
+        }
+
+        .plusminus:hover {
+            background-color: #fff;
+            color: #d11515;
+            border-color: #d11515;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myBtn" onclick="viewCart()" data-bs-toggle="modal" data-bs-target="#cartModal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart"
+            viewBox="0 0 16 16">
+            <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+    </button>
+
+    <nav class="navbar">
+        <h2 style="
+    line-height: 100px;"><img class="logo"
+                src="https://genshindb.org/wp-content/uploads/2021/08/Cooking-Tonkotsu-Ramen.png">
+            Ramen House
+        </h2>
+        <a onclick="viewCart()" data-bs-toggle="modal" data-bs-target="#cartModal" style="margin-right: 60px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart2"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg>
+        </a>
+    </nav>
+
+    <div style="margin: 30px auto 20px auto; text-align: center;">
+        <h3>Welcome to our Kiosk</h3>
+        <h5>Choose your order</h5>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col card" onmouseover="cardOnHover(this)" onmouseout="cardOutHover(this)">
+                <img src="https://www.elmundoeats.com/wp-content/uploads/2021/02/FP-Quick-30-minutes-chicken-ramen.jpg">
+                <div>
+                    <h4>Premium Chicken Ramen</h4>
+                    <h5>Php 300</h5>
+                    <div class="form-group row">
+                        <label for="ramen1" class="col-sm-3 col-form-label">Quantity</label>
+                        <input type="number" class="col-sm-5 input-group-field form-control" name="quantityinvent"
+                            min="0" value="0" style="width:60px" id="ramen1" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card" onmouseover="cardOnHover(this)" onmouseout="cardOutHover(this)">
+                <img src="https://lindseyeatsla.com/wp-content/uploads/2019/08/Lindseyeatsla_Spicy_Miso_Ramen-3.jpg">
+                <div>
+                    <h4>Miso Chicken Ramen</h4>
+                    <h5>Php 270</h5>
+                    <div class="form-group row">
+                        <label for="ramen2" class="col-sm-3 col-form-label">Quantity</label>
+                        <input type="number" class="col-sm-5 input-group-field form-control" name="quantityinvent"
+                            min="0" value="0" style="width:60px" id="ramen2" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card" onmouseover="cardOnHover(this)" onmouseout="cardOutHover(this)">
+                <img
+                    src="https://i0.wp.com/baketotheroots.de/wp-content/uploads/2022/04/SQ_220304_Creamy-Miso-Ramen-with-Chicken-Katsu.jpg?fit=1200%2C1200&ssl=1">
+                <div>
+                    <h4>Miso Ramen with Chicken Katsu</h4>
+                    <h5>Php 350</h5>
+                    <div class="form-group row">
+                        <label for="ramen3" class="col-sm-3 col-form-label">Quantity</label>
+                        <input type="number" class="col-sm-5 input-group-field form-control" name="quantityinvent"
+                            min="0" value="0" style="width:60px" id="ramen3" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col card" onmouseover="cardOnHover(this)" onmouseout="cardOutHover(this)">
+                <img
+                    src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/D990CCF4-0830-4357-B5F3-C28E8E184E9B/Derivates/e4dff957-d125-4f18-93f2-b1c82a36d7e0.jpg">
+                <div>
+                    <h4>Shio Ramen</h4>
+                    <h5>Php 250</h5>
+                    <div class="form-group row">
+                        <label for="ramen4" class="col-sm-3 col-form-label">Quantity</label>
+                        <input type="number" class="col-sm-5 input-group-field form-control" name="quantityinvent"
+                            min="0" value="0" style="width:60px" id="ramen4" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card" onmouseover="cardOnHover(this)" onmouseout="cardOutHover(this)">
+                <img
+                    src="https://thumbs.dreamstime.com/b/shoyu-ramen-gray-bowl-black-slate-table-top-japanese-cuisine-meat-noodle-soup-chashu-pork-asian-food-shoyu-ramen-211227031.jpg">
+                <div>
+                    <h4>Shoyu Ramen</h4>
+                    <h5>Php 290</h5>
+                    <div class="form-group row">
+                        <label for="ramen5" class="col-sm-3 col-form-label">Quantity</label>
+                        <input type="number" class="col-sm-5 input-group-field form-control" name="quantityinvent"
+                            min="0" value="0" style="width:60px" id="ramen5" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card" onmouseover="cardOnHover(this)" onmouseout="cardOutHover(this)">
+                <img
+                    src="https://www.foodandwine.com/thmb/c4_EV3Zl9XcBVLswAslmyZjtNa8=/1000x1000/filters:fill(auto,1)/miso-chicken-ramen-XL-RECIPE1217-96952c0ec830414d961a39ce21af924e.jpg">
+                <div>
+                    <h4>Sapporo Ramen</h4>
+                    <h5>Php 200</h5>
+                    <div class="form-group row">
+                        <label for="ramen6" class="col-sm-3 col-form-label">Quantity</label>
+                        <input type="number" class="col-sm-5 input-group-field form-control" name="quantityinvent"
+                            min="0" value="0" style="width:60px" id="ramen6" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 30px; margin-top: 40px;">
+        Dela Cruz, Rasheed - CSAG
+    </footer>
+    <div class="modal" id="cartModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto">MY ORDER</h5>
+                    </button>
+                </div>
+                <form method="post">
+                    <div class="modal-body">
+                        <div id="orders">
+                        </div>
+
+
+                        <hr />
+                        <h5 id="totalAmount" style="text-align: center;">Total Amount: Php </h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                            style="width: 120px;">Cancel
+                            Order</button>
+                        <button type="submit" onclick="itadakimasu()" class="btn btn-success"
+                            style="width: 120px;">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function viewCart() {
+            orders = document.getElementById("orders");
+            ramen1 = 300 * document.getElementById("ramen1").value;
+            ramen2 = 270 * document.getElementById("ramen2").value;
+            ramen3 = 350 * document.getElementById("ramen3").value;
+            ramen4 = 250 * document.getElementById("ramen4").value;
+            ramen5 = 290 * document.getElementById("ramen5").value;
+            ramen6 = 200 * document.getElementById("ramen6").value;
+            
+            ramenTotal = ramen1 + ramen2 + ramen3 + ramen4 + ramen5 + ramen6;
+
+            total = document.getElementById("totalAmount");
+            total.innerHTML = "Total Amount: Php " + ramenTotal;
+        }
+        function itadakimasu() {
+            alert("Arigato, please wait your food to be serve. Itadakimasu!");
+        }
+    </script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            $('[data-quantity="plus"]').click(function (e) {
+                e.preventDefault();
+                fieldName = $(this).attr('data-field');
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                if (!isNaN(currentVal)) {
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+            $('[data-quantity="minus"]').click(function (e) {
+                e.preventDefault();
+                fieldName = $(this).attr('data-field');
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                if (!isNaN(currentVal) && currentVal > 0) {
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+        });
+    </script>
+    <script>
+        function cardOnHover(x) {
+            x.style.backgroundColor = "#f2291b";
+        }
+
+        function cardOutHover(x) {
+            x.style.backgroundColor = "#d11515";
+        }
+    </script>
+</body>
+
+</html>

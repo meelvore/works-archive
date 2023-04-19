@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRELIM ACTIVITY 3</title>
+	<link rel="icon" href="PUSyCAT_Logo.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="Prelim_Act3.css">
+</head>
+
+<body id="top">
+	<button onclick="topFunction()" id="myBtn" title="Go to top">
+		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up"
+			viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+		</svg>
+	</button>
+
+	<div id="header">
+		<img src="PUSyCAT.png" class="cover" alt="Pusycat Logo in Footer" style="width: 50%;">
+	</div>
+
+	<div class="container" style="margin-bottom: 7%;">
+		<div class="row">
+			<div class="col coverdiv1">
+				<h1 style="font-size: 3.5em;">Enroll Now and <br>Become A Puspin</h1>
+				<h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, asperiores.</h5>
+				<BR>
+				<a id="enrollNow" href="#studentForm">Answer Information Sheet</a>
+			</div>
+			<div class="col coverdiv2">
+				<img src="https://hipoteca-genial.mx/storage/app/uploads/public/621/ff2/75c/621ff275c7c1f101102127.svg"
+					class="home" width="105%">
+			</div>
+		</div>
+	</div>
+	<!-- <img src="PUSyCAT_Footer.png" class="cover" alt="Pusycat Logo in Footer" style="width: 11%;"> -->
+
+	<div class="SIS">
+		<h1 id="studentForm">Student Information Sheet</h1>
+		<h3>Be a Puspin!</h3>
+	</div>
+
+	<form>
+		<div class="container divForm">
+			<h4>Student Info</h4>
+			<div class="row">
+				<div class="col">
+					<div class="row">
+						<div class="col-10">
+							<label for="Name">Student's Name</label>
+							<input class="form-control" type="text" id="Name" name="Name" placeholder="Puspin Dela Cruz"
+								required>
+						</div>
+						<div class="col-2">
+							<label for="Age">Age</label>
+							<input class="form-control" type="number" id="Age" name="Age" required>
+						</div>
+					</div>
+					<div class="mt-2">
+						Male/Female
+						<input type="radio" id="yes" name="Sex" value="yes">
+						<label for="css">Male</label>
+						<input type="radio" id="no" name="Sex" value="no">
+						<label for="No">Female</label>
+						<div>
+							Birthdate
+							<input class="form-control" type="date" id="Birthdate" name="Birthdate"
+								style="	text-align: center;" required>
+							<label for="Address">Address</label>
+							<input class="form-control" type="text" id="Address" name="Address" required>
+						</div>
+					</div>
+					<div>
+						<label for="Guardian">Guardian's name(s)</label>
+						<input class="form-control" type="text" id="Guardian" name="Guardian" required>
+						<label for="Religion">Religion</label>
+						<input class="form-control" type="text" id="Religion" name="Religion" required>
+					</div>
+					<div>
+						<label for="Relationship">Relationship to student</label>
+						<input class="form-control" type="text" id="Relationship" name="Relationship" required>
+
+						<div class="form-group input-group mb-3">
+							<label for="RelationshipTel">Telephone</label>
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon3">+63</span>
+							</div>
+							<input class="form-control" type="tel" id="RelationshipTel" name="RelationshipTel" required>
+						</div>
+					</div>
+					<div>
+						<label for="familyEmail">Family Email</label>
+						<input class="form-control" type="email" id="familyEmail" name="familyEmail"
+							placeholder="name@example.com" required>
+						<label for="WaytoContact">Best way to contact you</label>
+						<input class="form-control" type="text" id="WaytoContact" name="WaytoContact" required>
+					</div>
+					<div>
+						<label for="EmergencyName">Emergency Contact Name</label>
+						<input class="form-control" type="text" id="EmergencyName" name="EmergencyName" required>
+						<label for="EmergencyTel">Telephone</label>
+						<input class="form-control" type="tel" id="EmergencyTel" name="EmergencyTel" required>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container divForm">
+			<h4>Parents Info</h4>
+			<div class="row">
+				<div class="col-7">
+					<label for="NameM">Mother's Name</label>
+					<input class="form-control" type="text" id="NameM" name="NameM" required>
+				</div>
+				<div class="col-5">
+					<label for="WorkplaceM">Workplace</label>
+					<input class="form-control" type="text" id="WorkplaceM" name="WorkplaceM">
+				</div>
+				<div class="col-7">
+					<label for="NameF">Father's Name</label>
+					<input class="form-control" type="text" id="NameF" name="NameF" required>
+				</div>
+				<div class="col-5">
+					<label for="WorkplaceF">Workplace</label>
+					<input class="form-control" type="text" id="WorkplaceF" name="WorkplaceF">
+				</div>
+				<div>
+					<label for="Medical">Medical Issues/Allergies/Medication</label><br>
+					<input class="form-control" type="text" id="Medical" name="Medical">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container divForm">
+			<h4>Student Setup</h4>
+			<div class="row">
+				<div class="col">
+					<div>
+						<label for="Academic">Academic Challenges</label>
+						<input class="form-control" type="text" id="Academic" name="Academic">
+					</div>
+					<div>
+						<div class="mt-3">
+							Does your child have a device?
+							<input type="radio" id="yes" name="device" value="yes">
+							<label for="yes">Yes</label>
+							<input type="radio" id="no" name="device" value="no">
+							<label for="no">No</label>
+						</div>
+						<div class="mt-3">
+							What kind of device is your child using?
+							<input type="checkbox" id="yes" name="typeDevice" value="mobile">
+							<label for="css">Mobile</label>
+							<input type="checkbox" id="no" name="typeDevice" value="laptop">
+							<label for="No">Laptop</label>
+							<input type="checkbox" id="no" name="typeDevice" value="both">
+							<label for="No">Both</label>
+							<input type="radio" id="no" name="typeDevice" value="n/a">
+							<label for="No">N/A</label>
+						</div>
+					</div>
+					<div class="mt-3">
+						Do you have any issues with the internet?
+						<input type="radio" id="yes" name="Internet" value="yes">
+						<label for="css">Yes</label>
+						<input type="radio" id="no" name="Internet" value="no">
+						<label for="No">None</label>
+					</div>
+					<div style="margin-top:20px;">
+						<label for="Relatives">Names of any relatives attending the school and grade they are
+							in.</label><br>
+						<input class="form-control" type="text" id="Relatives" name="Relatives" style="width: 100%;">
+					</div>
+					<div class="mt-3">
+						<label for="Date">Date</label>
+						<input class="form-control" style="width: 200px; text-align: center;" type="date" id="Date"
+							name="Date" required>
+						<input style="float:right; margin:20px 40px 0px 0px;" type="submit" id="submit" name="submit"
+							required>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<footer>
+		Copyright © 2022 All rights reserved.
+		<br>Philippine University System College of Arts and Technology
+	</footer>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+</body>
+
+</html>

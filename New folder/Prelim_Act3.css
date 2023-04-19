@@ -1,0 +1,139 @@
+html{scroll-behavior:smooth}
+body {
+    background-color: #032539;
+    color: white;
+}
+
+/* 
+all inside a modal?
+
+gradient header "sutdent form"
+
+required * 
+colored label
+
+hr --- information ---- 
+
+
+bg - campus
+
+device use, images choice
+
+alert/success when submit
+*/
+
+#header, footer {
+    padding: 1.5%;
+    background: rgb(3,37,57);
+    background: linear-gradient(90deg, rgba(3,37,57,1) 0%, rgba(28,118,143,1) 37%, rgba(250,153,28,1) 100%);
+}
+
+footer {
+    padding: 2.5%;
+    padding-left: 7%;
+}
+
+.home{
+    float: right;
+    padding: 10%;
+}
+
+.coverdiv1 {
+    margin-top: 13%;
+    text-align: left;
+}
+
+.coverdiv2 {
+    margin-top: 5%;
+}
+
+.SIS {
+    padding: 4%;
+}
+
+div {
+    text-align: justify;
+    justify-content: flex-end;
+    text-justify: inter-word;
+}
+
+.divForm {
+    border: 2px solid #fff;
+    padding: 4%;
+    border-radius: 25px;
+    margin-bottom: 3%;
+}
+
+h4 {
+    margin-top:-7%;
+    margin-left:50%;
+    background-color: #032539;
+    width: 20%;
+    text-align: center;
+}
+
+#enrollNow {
+    background-color: #FA991C;
+    text-decoration: none;
+    padding: 1% 4%;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 25px;
+}
+
+label { 
+    font-size: 1.5em;
+    margin-bottom: 3px;
+}
+
+input[type=submit] {
+    background-color: #FA991C;
+    color: #fff;
+    padding: 1% 4%;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+input[type=submit]:hover, #enrollNow:hover{
+    background-color: #fff;
+    color: #FA991C;
+    border: 2px solid #FA991C;
+}
+
+
+
+
+/*back to top button*/
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #FA991C;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 8px 20px 13px 20px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 25px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #af6a11;
+}

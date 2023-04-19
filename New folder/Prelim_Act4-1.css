@@ -1,0 +1,232 @@
+body {
+    font-family: Georgia, Geneva, sans-serif;
+    color: white;
+    background-color: black;
+    /* text-align: center;
+       display: inline-block; */
+}
+
+/* #6A0D18 #FF9821 #244D4F */
+h1 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
+.movieselection{
+    margin: auto;
+    width: 98%;
+    padding-left: 2%;
+}
+
+.white {
+    padding-left: 44%;
+}
+
+.source {
+    padding-left: 2%;
+}
+
+th{
+    text-align: center;
+}
+
+hr {
+    width: 65%;
+}
+
+a {
+    color: red;
+}
+
+.float {
+    position: fixed;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 3px 2px 4px white;
+}
+
+.float:hover {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    padding-left: 30px;
+    text-indent: 50px;
+    text-align: justify;
+    color: white;
+    float: left;
+    width: 50%;
+}
+
+ul {
+    list-style-type: circle;
+    color: white;
+    list-style-position: inside;
+}
+
+.coverimage {
+    position: relative;
+    text-align: center;
+    color: white;   
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.cover, .moviecover {
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
+.moviecover1 {
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.moviecover2 {
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.moviecover3 {
+    height: 400px;
+    object-fit: cover;
+    object-position: 70% 30%;
+}
+
+.moviecover4 {
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.imagelink{
+    border: 
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.movieselection{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+button {
+    margin: 40px;
+    outline: 0;
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 50px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imageinimage{
+    position: relative;
+}
+
+.inner-image {
+    position: absolute;
+    top: 15px;
+    right: 15%;
+  }
+  
+button:hover {
+    background-color: red;
+    color: white;
+    opacity: 100%;
+}
+
+#hd {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #18191a;
+}
+
+#dh {
+    float: left;
+}
+
+#dh a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#dh a:hover:not(.active) {
+    background-color: red;
+}
+
+.active {
+    background-color: red;
+}
+
+
+/*back to top button*/
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 8px 20px 13px 20px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 25px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: maroon;
+}
+
+/*end*/
